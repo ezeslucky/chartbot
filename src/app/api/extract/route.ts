@@ -43,7 +43,8 @@ async function scrapeWebsite(url: string) {
 
 const turndownService = new TurndownService();
 
-export async function POST(req: NextRequest, resp: NextResponse) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export async function POST(req: NextRequest, _resp: NextResponse) {
   const { url } = await req.json();
 
   if (!url) {

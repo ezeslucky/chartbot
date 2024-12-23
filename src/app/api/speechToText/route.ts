@@ -2,8 +2,9 @@ import { headers } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 import OpenAI, { toFile } from "openai";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function POST(req: NextRequest, resp: NextResponse) {
-  const headersList = headers();
+  const headersList = await headers();
   const apiKey = headersList.get("x-api-key");
 
   if (!apiKey) {

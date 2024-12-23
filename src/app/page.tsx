@@ -2,6 +2,7 @@
 
 import Spinner from "@/components/ui/loading-spinner";
 import { useSessionsContext } from "@/context";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 

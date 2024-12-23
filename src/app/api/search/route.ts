@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { DuckDuckGoSearch } from "@langchain/community/tools/duckduckgo_search";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function POST(req: NextRequest, resp: NextResponse) {
   const { query } = await req.json();
 

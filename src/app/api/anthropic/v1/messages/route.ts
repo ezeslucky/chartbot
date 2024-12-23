@@ -1,9 +1,10 @@
 import { headers } from "next/headers";
 import { NextResponse, type NextRequest } from "next/server";
 
-export async function POST(req: NextRequest, resp: NextResponse) {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export async function POST(req: NextRequest, _resp: NextResponse) {
   const headersList = headers();
-  const apikey = headersList.get("x-api-key");
+  const apikey = (await headersList).get("x-api-key");
 
   if (!apikey) {
     return Response.json({ error: "No API key provided" }, { status: 401 });
@@ -38,6 +39,7 @@ export async function POST(req: NextRequest, resp: NextResponse) {
   const decoder = new TextDecoder();
 
   const pump = async () => {
+    // eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
     const { value, done } = await reader?.read()!;
     if (done) {
       writer.close();
