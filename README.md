@@ -18,36 +18,43 @@ Follow these steps
 <hr>
 1. Fork the Repository
 Click the "Fork" button at the top-right of the repository page to create your own copy of the project.
+<hr>
 
 2. Clone Your Fork
 Clone your forked repository to your local machine:
 ```
 git clone https://github.com/ezeslucky/chartbot.git
 ```
+<hr>
 3. Install Dependencies
 Run the following command to install the project's dependencies:
 ```
 npm install
 ```
+<hr>
 4. Start the Development Server
 Run the development server to test your changes locally:
 ```
 npm run dev
 ```
+<hr>
 5. Create a New Branch
 Create a branch for your feature or fix:
 ```
 git checkout -b feature-name
 ```
+<hr>
 6. Make Your Changes
+<hr>
    
 7 .Edit the code to implement your feature or fix the bug.
-
+<hr>
 8. Commit Your Changes
 After making your changes, commit them with a descriptive message:
 ```
 git commit -m "Add feature-name"
 ```
+<hr>
 9. Push Your Changes
 Push your branch to your forked repository:
 ```
