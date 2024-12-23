@@ -12,7 +12,7 @@ import { Input } from "../ui/input";
 import { Popover, PopoverContent, PopoverTrigger } from "../ui/popover";
 import { Type } from "../ui/text";
 import { Tooltip } from "../ui/tooltip";
-import { Delete01Icon, Edit02Icon } from "@hugeicons/react-pro";
+import { Delete01Icon, Edit02Icon } from "@hugeicons/react-pro-pro-pro";
 
 export const HistoryItem = ({
   session,

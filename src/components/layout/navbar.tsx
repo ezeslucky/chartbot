@@ -10,7 +10,7 @@ import {
   PlusSignIcon,
   Settings03Icon,
   Sun01Icon,
-} from "@hugeicons/react-pro";
+} from "@hugeicons/react-pro-pro";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 import { HistorySidebar } from "../history/history-side-bar";

@@ -10,11 +10,12 @@ import { usePreferenceContext } from "@/context/preferences";
 import { useModelList } from "@/hooks/use-model-list";
 import { Flex } from "./ui/flex";
 import { Type } from "./ui/text";
-import { Settings03Icon } from "@hugeicons/react-pro";
+import { Settings03Icon } from "@hugeicons/react-pro-pro-pro";
 
 export const QuickSettings = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { preferences, updatePreferences } = usePreferenceContext();
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { getModelByKey, getAssistantByKey } = useModelList();
 
   const renderResetToDefault = (key: keyof TPreferences) => {

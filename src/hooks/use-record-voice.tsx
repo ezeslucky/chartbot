@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Microphone, StopCircle } from "@phosphor-icons/react";
 import { Tooltip } from "@/components/ui/tooltip";
 import { AudioWaveSpinner } from "@/components/ui/audio-wave";
-import { RecordIcon, StopIcon } from "@hugeicons/react-pro";
+import { RecordIcon, StopIcon } from "@hugeicons/react-pro-pro";
 
 export const useRecordVoice = () => {
   const [text, setText] = useState<string>("");

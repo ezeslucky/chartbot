@@ -11,7 +11,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { ModelIcon, ModelIconType } from "@/components/model-icon";
-import { CheckmarkCircle02Icon, AlertCircleIcon } from "@hugeicons/react-pro";
+import { CheckmarkCircle02Icon, AlertCircleIcon } from "@hugeicons/react-pro-pro";
 import { cn } from "@/lib/utils";
 
 export const ModelSettings = () => {

@@ -1,6 +1,6 @@
 import { useChatContext } from "@/context/chat";
 import { TPrompt } from "@/hooks/use-prompts";
-import { Edit02Icon, NoteIcon } from "@hugeicons/react-pro";
+import { Edit02Icon, NoteIcon } from "@hugeicons/react-pro-pro";
 import { DotsThree, Pencil, TrashSimple } from "@phosphor-icons/react";
 import { Button } from "../ui/button";
 import {

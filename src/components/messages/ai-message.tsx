@@ -30,7 +30,7 @@ import {
   Delete01Icon,
   ThumbsDownIcon,
   Tick01Icon,
-} from "@hugeicons/react-pro";
+} from "@hugeicons/react-pro-pro";
 export type TAIMessage = {
   chatMessage: TChatMessage;
   isLast: boolean;
@@ -91,6 +91,7 @@ export const AIMessage = ({ chatMessage, isLast }: TAIMessage) => {
     );
   };
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const modelForMessage = getModelByKey(inputProps!.assistant.baseModel);
 
   const handleCopyContent = () => {

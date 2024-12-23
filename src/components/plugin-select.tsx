@@ -10,7 +10,7 @@ import { Switch } from "./ui/switch";
 import { Tooltip } from "./ui/tooltip";
 import { Flex } from "./ui/flex";
 import { Type } from "./ui/text";
-import { ConnectIcon } from "@hugeicons/react-pro";
+import { ConnectIcon } from "@hugeicons/react-pro-pro-pro";
 export type TPluginSelect = {
   selectedAssistantKey: string;
 };

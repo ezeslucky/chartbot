@@ -15,7 +15,7 @@ import {
   Settings03Icon,
   SparklesIcon,
   VoiceIcon,
-} from "@hugeicons/react-pro";
+} from "@hugeicons/react-pro-pro";
 import { useState } from "react";
 
 import { createContext, useContext } from "react";

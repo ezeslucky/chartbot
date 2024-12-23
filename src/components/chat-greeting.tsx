@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import moment from "moment";
-import { WavingHand02Icon } from "@hugeicons/react-pro";
+import { WavingHand02Icon } from "@hugeicons/react-pro-pro-pro";
 
 export const ChatGreeting = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const renderGreeting = (name: string) => {
     const date = moment();
     const hours = date.get("hour");

@@ -8,7 +8,7 @@ import {
 } from "./ui/dropdown-menu";
 import { Tooltip } from "./ui/tooltip";
 import { Button } from "./ui/button";
-import { ArrowDown01Icon, SparklesIcon } from "@hugeicons/react-pro";
+import { ArrowDown01Icon, SparklesIcon } from "@hugeicons/react-pro-pro-pro";
 import { Badge } from "./ui/badge";
 import { TAssistant } from "@/hooks";
 

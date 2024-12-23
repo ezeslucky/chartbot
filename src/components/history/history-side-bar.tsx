@@ -1,7 +1,7 @@
 import { useSessionsContext } from "@/context/sessions";
 import { sortSessions } from "@/lib/helper";
 import { cn } from "@/lib/utils";
-import { SidebarLeftIcon } from "@hugeicons/react-pro";
+import { SidebarLeftIcon } from "@hugeicons/react-pro-pro";
 import { ClockCounterClockwise, X } from "@phosphor-icons/react";
 import { useState } from "react";
 import { Drawer } from "vaul";

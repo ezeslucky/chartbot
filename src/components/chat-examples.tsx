@@ -1,10 +1,11 @@
 import { useChatContext } from "@/context/chat";
 import { usePromptsContext } from "@/context/prompts";
-import { ArrowRight02Icon } from "@hugeicons/react-pro";
+import { ArrowRight02Icon } from "@hugeicons/react-pro-pro-pro";
 import { motion } from "framer-motion";
 import { Flex } from "./ui/flex";
 import { Type } from "./ui/text";
 
+// eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export type TChatExamples = {};
 export const ChatExamples = () => {
   const { allPrompts } = usePromptsContext();
