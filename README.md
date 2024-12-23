@@ -35,15 +35,18 @@ npm run dev
 ```
 5. Create a New Branch
 Create a branch for your feature or fix:
-
+```
 git checkout -b feature-name
+```
 6. Make Your Changes
-Edit the code to implement your feature or fix the bug.
+   
+7 .Edit the code to implement your feature or fix the bug.
 
-7. Commit Your Changes
+8. Commit Your Changes
 After making your changes, commit them with a descriptive message:
-
+```
 git commit -m "Add feature-name"
+```
 8. Push Your Changes
 Push your branch to your forked repository:
 
