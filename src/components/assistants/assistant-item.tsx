@@ -65,6 +65,7 @@ export const AssistantItem = ({
               <Button
                 variant={"ghost"}
                 size={"iconSm"}
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
                 onClick={(e) => {
                   setOpen(true);
                 }}

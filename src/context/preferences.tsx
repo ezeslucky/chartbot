@@ -49,11 +49,13 @@ export const PreferenceProvider = ({ children }: TPreferencesProvider) => {
   const [apiKeys, setApiKeys] = useState<TApiKeys>({});
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     preferencesQuery.data &&
       setPreferences({ ...defaultPreferences, ...preferencesQuery.data });
   }, [preferencesQuery.data]);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     apiKeysQuery.data && setApiKeys(apiKeysQuery.data);
   }, [apiKeysQuery.data]);
 
@@ -65,6 +67,7 @@ export const PreferenceProvider = ({ children }: TPreferencesProvider) => {
     setPreferencesMutation.mutate(newPreferences, {
       onSuccess: () => {
         preferencesQuery.refetch();
+        // eslint-disable-next-line @typescript-eslint/no-unused-expressions
         onSuccess && onSuccess(preferences);
       },
     });

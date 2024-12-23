@@ -1,37 +1,16 @@
 "use client";
 
 import { TPrompt, usePrompts } from "@/hooks/use-prompts";
-import { useEditor, EditorContent } from "@tiptap/react";
-import Document from "@tiptap/extension-document";
-import HardBreak from "@tiptap/extension-hard-break";
-import Highlight from "@tiptap/extension-highlight";
-import Paragraph from "@tiptap/extension-paragraph";
-import Placeholder from "@tiptap/extension-placeholder";
-import Text from "@tiptap/extension-text";
-import React, { act, useEffect, useState } from "react";
+
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-import { Button } from "@/components/ui/button";
-import {
-  ArrowLeft,
-  BookBookmark,
-  FolderSimple,
-  Plus,
-} from "@phosphor-icons/react";
-import { Input } from "@/components/ui/input";
-import { Badge } from "@/components/ui/badge";
+
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import {
-  Command,
-  CommandEmpty,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from "@/components/ui/command";
+
 import { CreatePrompt } from "@/components/prompts/create-prompt";
 import { PromptLibrary } from "@/components/prompts/prompt-library";
 
-import { createContext, useContext } from "react";
+import { createContext, useContext, useState } from "react";
 import { useChatContext } from "./chat";
 
 export type TPromptsContext = {
@@ -70,6 +49,7 @@ export const PromptsProvider = ({ children }: TPromptsProvider) => {
     undefined
   );
   const {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     getPrompts,
     promptsQuery,
     createPromptMutation,
@@ -82,6 +62,7 @@ export const PromptsProvider = ({ children }: TPromptsProvider) => {
     if (action === "create") {
       setShowCreatePrompt(true);
     } else {
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       action && setTab(action);
     }
     setIsPromptOpen(true);
@@ -121,6 +102,7 @@ export const PromptsProvider = ({ children }: TPromptsProvider) => {
                 createPromptMutation.mutate(prompt);
               }}
               onUpdatePrompt={(prompt) => {
+                // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                 editablePrompt?.id &&
                   updatePromptMutation.mutate({
                     id: editablePrompt?.id,

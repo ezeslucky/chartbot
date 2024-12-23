@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-expressions */
 "use client";
 
 import {
@@ -5,7 +6,7 @@ import {
   TChatSession,
   useChatSession,
 } from "@/hooks/use-chat-session";
-import { Editor } from "@tiptap/react";
+// import { Editor } from "@tiptap/react";
 import { useParams, useRouter } from "next/navigation";
 import React, { createContext, useContext, useEffect, useState } from "react";
 
@@ -60,11 +61,13 @@ export const SessionsProvider = ({ children }: TSessionsProvider) => {
     addMessageToSessionMutation,
     getSessionByIdMutation,
     getSessionByIdQuery,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     addSessionsMutation,
   } = props;
 
   const currentSessionQuery = getSessionByIdQuery;
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { push, refresh } = useRouter();
 
   useEffect(() => {

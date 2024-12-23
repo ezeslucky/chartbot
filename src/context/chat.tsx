@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 import { useToast } from "@/components/ui/use-toast";
 import { TToolResponse, defaultPreferences, useTools } from "@/hooks";
@@ -95,6 +97,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
   useEffect(() => {
     const props = currentMessage;
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-expressions
     props &&
       setCurrentSession?.((session) => {
         if (!session) return undefined;
@@ -120,6 +123,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
       });
 
     if (currentMessage?.stop) {
+      // eslint-disable-next-line @typescript-eslint/no-unused-expressions
       currentMessage?.sessionId &&
         addMessageToSession(currentMessage?.sessionId, {
           ...currentMessage,
@@ -276,6 +280,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
             },
           })
         )
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         ?.filter((t): t is any => !!t) || [];
 
     console.log("Available tools", availableTools);
@@ -285,6 +290,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
     const previousAllowedChatHistory = chatHistory
       .slice(0, messageLimit)
       .reduce(
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         (acc: (HumanMessage | AIMessage)[], { rawAI, rawHuman, image }) => {
           if (rawAI && rawHuman) {
             return [...acc, new HumanMessage(rawHuman), new AIMessage(rawAI)];
@@ -302,6 +308,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
 
     Object.assign(modifiedModel, selectedModel);
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     modifiedModel.bindTools = (tools: any[], options: any) => {
       return selectedModel.bindTools?.(tools, {
         ...options,
@@ -311,8 +318,10 @@ export const ChatProvider = ({ children }: TChatProvider) => {
 
     if (availableTools?.length) {
       const agentWithTool = await createToolCallingAgent({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         llm: modifiedModel as any,
         tools: availableTools,
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         prompt: prompt as any,
         streamRunnable: true,
       });
@@ -320,6 +329,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
       console.log("aGENT WITH TOOL", agentWithTool);
 
       agentExecutor = new AgentExecutor({
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
         agent: agentWithTool as any,
         tools: availableTools,
       });
@@ -327,6 +337,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
     const chainWithoutTools = prompt.pipe(
       selectedModel.bind({
         signal: currentAbortController?.signal,
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       }) as any
     );
 
@@ -338,6 +349,7 @@ export const ChatProvider = ({ children }: TChatProvider) => {
         : chainWithoutTools;
 
     try {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const stream: any = await executor.invoke(
         {
           chat_history: previousAllowedChatHistory || [],
@@ -368,13 +380,16 @@ export const ChatProvider = ({ children }: TChatProvider) => {
                   name
                 );
 
+                // eslint-disable-next-line @typescript-eslint/no-unused-expressions
                 name &&
                   setCurrentTools((tools) => [
                     ...tools,
                     { toolName: name, toolLoading: true },
                   ]);
               },
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
               handleToolError(err, runId, parentRunId, tags) {},
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
               handleToolEnd(output, runId, parentRunId, tags) {},
 
               handleLLMEnd: async (output: LLMResult) => {

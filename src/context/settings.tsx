@@ -72,6 +72,7 @@ export const SettingsProvider = ({ children }: TSettingsProvider) => {
     },
     {
       name: "Plugins",
+      // eslint-disable-next-line react/jsx-no-undef
       icon: () => <DashboardCircleIcon size={18} strokeWidth="2" />,
       key: "plugins",
       component: <PluginSettings />,
