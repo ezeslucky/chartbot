@@ -3,12 +3,12 @@
 import {
   AlertDialog,
   AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
+  AlertDialogTitle,
   AlertDialogDescription,
   AlertDialogFooter,
   AlertDialogHeader,
-  AlertDialogTitle,
+  
 } from "@/components/ui/alert-dialog";
 import React, { createContext, useContext, useState } from "react";
 
@@ -60,7 +60,7 @@ export const ConfirmProvider = ({ children }: TConfirmProvider) => {
   return (
     <ConfirmContext.Provider value={{ open, dismiss }}>
       <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
-        <AlertDialogContent>
+        <AlertDialogTitle>
           <AlertDialogHeader>
             <AlertDialogTitle>{args?.title}</AlertDialogTitle>
             {args?.message && (
@@ -68,9 +68,9 @@ export const ConfirmProvider = ({ children }: TConfirmProvider) => {
             )}
           </AlertDialogHeader>
           <AlertDialogFooter>
-            <AlertDialogCancel onClick={dismiss}>
+            <AlertDialogContent onClick={dismiss}>
               {args?.cancelTitle || "Cancel"}
-            </AlertDialogCancel>
+            </AlertDialogContent>
             <AlertDialogAction
               onClick={() => {
                 args?.onConfirm();
@@ -80,7 +80,7 @@ export const ConfirmProvider = ({ children }: TConfirmProvider) => {
               {args?.actionTitle || "Continue"}
             </AlertDialogAction>
           </AlertDialogFooter>
-        </AlertDialogContent>
+        </AlertDialogTitle>
       </AlertDialog>
       {children}
     </ConfirmContext.Provider>

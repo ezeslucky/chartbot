@@ -1,4 +1,5 @@
 import { get, set } from "idb-keyval";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import { TBaseModel, TModelKey } from "./use-model-list";
 import { TToolKey } from "./use-tools";
 import { useMutation, useQuery } from "@tanstack/react-query";

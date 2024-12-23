@@ -6,7 +6,7 @@ import { ModelSettings } from "@/components/settings/models";
 import { PluginSettings } from "@/components/settings/plugins";
 import { VoiceInput } from "@/components/settings/voice-input";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogTitle } from "@/components/ui/dialog";
 import { cn } from "@/lib/utils";
 import {
   BrainIcon,
@@ -106,7 +106,7 @@ export const SettingsProvider = ({ children }: TSettingsProvider) => {
       {children}
 
       <Dialog open={isSettingOpen} onOpenChange={setIsSettingOpen}>
-        <DialogContent className="w-[96dvw] max-h-[80dvh] rounded-2xl md:min-w-[800px] gap-0 md:h-[600px] flex flex-col overflow-hidden border border-white/5 p-0">
+        <DialogTitle className="w-[96dvw] max-h-[80dvh] rounded-2xl md:min-w-[800px] gap-0 md:h-[600px] flex flex-col overflow-hidden border border-white/5 p-0">
           <div className="w-full px-4 py-3 border-b border-zinc-500/20">
             <p className="text-md font-medium">Settings</p>
           </div>
@@ -138,7 +138,7 @@ export const SettingsProvider = ({ children }: TSettingsProvider) => {
               {selectedMenuItem?.component}
             </div>
           </div>
-        </DialogContent>
+        </DialogTitle>
       </Dialog>
     </SettingsContext.Provider>
   );

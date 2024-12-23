@@ -5,7 +5,7 @@ import { TPrompt, usePrompts } from "@/hooks/use-prompts";
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
-import { Dialog, DialogContent } from "@/components/ui/dialog";
+import { Dialog, DialogTitle } from "@/components/ui/dialog";
 
 import { CreatePrompt } from "@/components/prompts/create-prompt";
 import { PromptLibrary } from "@/components/prompts/prompt-library";
@@ -87,7 +87,7 @@ export const PromptsProvider = ({ children }: TPromptsProvider) => {
       {children}
 
       <Dialog open={isPromptOpen} onOpenChange={setIsPromptOpen}>
-        <DialogContent className="w-[96dvw] max-h-[80dvh] rounded-2xl md:w-[600px] gap-0 md:max-h-[600px] flex flex-col overflow-hidden border border-white/5 p-0">
+        <DialogTitle className="w-[96dvw] max-h-[80dvh] rounded-2xl md:w-[600px] gap-0 md:max-h-[600px] flex flex-col overflow-hidden border border-white/5 p-0">
           {showCreatePrompt ? (
             <CreatePrompt
               prompt={editablePrompt}
@@ -134,7 +134,7 @@ export const PromptsProvider = ({ children }: TPromptsProvider) => {
               onDelete={(prompt) => deletePromptMutation.mutate(prompt.id)}
             />
           )}
-        </DialogContent>
+        </DialogTitle>
       </Dialog>
     </PromptsContext.Provider>
   );
