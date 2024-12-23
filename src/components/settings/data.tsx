@@ -71,6 +71,7 @@ const chatMessageSchema = z.object({
   createdAt: z.string(),
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const botSchema = z.object({
   prompt: z.string(),
   name: z.string(),
@@ -90,6 +91,7 @@ const sessionSchema = z.object({
   updatedAt: z.string().optional(),
 });
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const promptSchema = z.object({});
 
 const importSchema = z.object({
@@ -169,10 +171,13 @@ export const Data = () => {
               return { message: ctx.defaultError };
             },
           });
+          // eslint-disable-next-line @typescript-eslint/no-unused-expressions
           parsedData?.apiKeys && updateApiKeys(parsedData?.apiKeys);
+          // eslint-disable-next-line @typescript-eslint/no-unused-expressions
           parsedData?.preferences &&
             updatePreferences(parsedData?.preferences as TPreferences);
 
+          // eslint-disable-next-line @typescript-eslint/no-unused-vars
           const incomingSessions = parsedData?.sessions?.filter(
             (s) => !!s.messages.length
           );

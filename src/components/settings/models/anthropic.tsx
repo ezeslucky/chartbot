@@ -1,6 +1,6 @@
 import { ArrowRight, Info } from "@phosphor-icons/react";
 import { useEffect, useState } from "react";
-import { Alert, AlertDescription, AlertTitle } from "../../ui/alert";
+
 import { Button } from "../../ui/button";
 import { Input } from "../../ui/input";
 import { useLLMTest } from "@/hooks/use-llm-test";

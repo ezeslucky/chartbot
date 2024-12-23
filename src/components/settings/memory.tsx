@@ -3,6 +3,7 @@ import { SettingCard } from "./setting-card";
 import { SettingsContainer } from "./settings-container";
 
 export const MemorySettings = () => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { updatePreferences, preferences } = usePreferenceContext();
 
   const renderMemory = (memory: string) => {
