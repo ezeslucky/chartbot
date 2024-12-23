@@ -21,7 +21,7 @@ Click the "Fork" button at the top-right of the repository page to create your o
 2. Clone Your Fork
 Clone your forked repository to your local machine:
 ```
-git clone
+git clone https://github.com/ezeslucky/chartbot.git
 ```
 3. Install Dependencies
 Run the following command to install the project's dependencies:
