@@ -2,7 +2,7 @@ import hljs from "highlight.js";
 import { useEffect, useRef } from "react";
 
 import { useClipboard } from "@/hooks/use-clipboard";
-import { Copy01Icon, Tick01Icon } from "@hugeicons/react-pro-pro-pro";
+import { Copy01Icon, Tick01Icon } from "@hugeicons/react-pro-pro";
 import { Button } from "./ui/button";
 import { Tooltip } from "./ui/tooltip";
 // import { Check, Copy } from "@phosphor-icons/react";

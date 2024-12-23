@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import moment from "moment";
-import { WavingHand02Icon } from "@hugeicons/react-pro-pro-pro";
+import { WavingHand02Icon } from "@hugeicons/react-pro-pro";
 
 export const ChatGreeting = () => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
