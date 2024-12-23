@@ -2,17 +2,14 @@ import { ModelIcon } from "@/components/model-icon";
 import { ChatAnthropic } from "@langchain/anthropic";
 import { ChatGoogleGenerativeAI } from "@langchain/google-genai";
 import { ChatOpenAI } from "@langchain/openai";
-
+import { defaultPreferences } from "./use-preferences";
+import { TToolKey } from "./use-tools";
 import { usePreferenceContext } from "@/context";
 import { useQuery } from "@tanstack/react-query";
 import { ChatOllama } from "@langchain/community/chat_models/ollama";
 import { useMemo } from "react";
-
+import { TAssistant } from "./use-chat-session";
 import { useAssistants } from "./use-bots";
-import { JSX } from "react/jsx-runtime";
-import { TToolKey } from "./use-tools";
-import { defaultPreferences } from "./use-preferences";
-import { TAssistant } from "./use-chart-section";
 
 export type TBaseModel = "openai" | "anthropic" | "gemini" | "ollama";
 

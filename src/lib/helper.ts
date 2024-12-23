@@ -1,5 +1,4 @@
-
-import { TChatMessage, TChatSession } from "@/hooks/use-chart-section";
+import { TChatMessage, TChatSession } from "@/hooks/use-chat-session";
 import moment from "moment";
 
 export function formatNumber(number: number) {

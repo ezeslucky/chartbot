@@ -1,10 +1,10 @@
-
+import { TAssistant } from "@/hooks/use-chat-session";
 import { useModelList } from "@/hooks/use-model-list";
 import { useState } from "react";
 import { usePreferenceContext } from "@/context";
 import { CommandItem } from "@/components/ui/command";
 import { defaultPreferences } from "@/hooks/use-preferences";
-// import { Flex } from "@/components/ui/flex";
+import { Flex } from "@/components/ui/flex";
 import { Badge } from "@/components/ui/badge";
 import {
   DropdownMenu,
@@ -14,8 +14,6 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { DotsThree, Pencil, TrashSimple } from "@phosphor-icons/react";
-import { TAssistant } from "@/hooks/use-chart-section";
-import { Flex } from "../ui/flex";
 
 export type TAssistantItem = {
   assistant: TAssistant;
