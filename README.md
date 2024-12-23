@@ -1,6 +1,6 @@
 Contributing 
 
-✅  Multi-Model Chat:  Integrate OpenAI, Gemini, Claude, and even your local Llama models! 🔄
+✅  Multi-Model Chat:  Integrate OpenAI, Gemini, Claude, and even your local Llama models! 🔄 <br>
 ✅  Custom Assistants:  🦸‍♂️🦸‍♀️ Create specialized AI assistants tailored to specific tasks.
 ✅  Real-time Chat:  💬 Enjoy seamless, streaming conversations.
 ✅  Prompt Library: 📚 Store and reuse your favorite prompts.
