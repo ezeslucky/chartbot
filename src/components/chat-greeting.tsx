@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import moment from "moment";
-import { WavingHand02Icon } from "@hugeicons/react";
+import { WavingHand02Icon } from "@hugeicons/react-pro";
 
 export const ChatGreeting = () => {
   const renderGreeting = (name: string) => {

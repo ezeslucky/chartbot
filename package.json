@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
+    "@hugeicons/react-pro-pro": "^0.3.2",
     "@langchain/anthropic": "^0.3.11",
     "@langchain/community": "^0.3.19",
     "@langchain/core": "^0.3.26",
@@ -62,6 +63,7 @@
     "date-fns": "^4.1.0",
     "embla-carousel-react": "^8.5.1",
     "formik": "^2.4.6",
+    "highlight.js": "^11.11.0",
     "hugeicons-react": "^0.3.0",
     "idb-keyval": "^6.2.1",
     "input-otp": "^1.4.1",

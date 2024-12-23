@@ -30,7 +30,7 @@ import {
   Delete01Icon,
   ThumbsDownIcon,
   Tick01Icon,
-} from "@hugeicons/react";
+} from "@hugeicons/react-pro";
 export type TAIMessage = {
   chatMessage: TChatMessage;
   isLast: boolean;

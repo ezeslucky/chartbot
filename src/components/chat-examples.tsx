@@ -1,6 +1,6 @@
 import { useChatContext } from "@/context/chat";
 import { usePromptsContext } from "@/context/prompts";
-import { ArrowRight02Icon } from "@hugeicons/react";
+import { ArrowRight02Icon } from "@hugeicons/react-pro";
 import { motion } from "framer-motion";
 import { Flex } from "./ui/flex";
 import { Type } from "./ui/text";

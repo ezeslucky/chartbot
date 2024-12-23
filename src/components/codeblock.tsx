@@ -2,10 +2,10 @@ import hljs from "highlight.js";
 import { useEffect, useRef } from "react";
 
 import { useClipboard } from "@/hooks/use-clipboard";
-import { Copy01Icon, Tick01Icon } from "@hugeicons/react";
+import { Copy01Icon, Tick01Icon } from "@hugeicons/react-pro-pro";
 import { Button } from "./ui/button";
 import { Tooltip } from "./ui/tooltip";
-import { Check, Copy } from "@phosphor-icons/react";
+// import { Check, Copy } from "@phosphor-icons/react";
 import { ibmPlex } from "@/app/fonts";
 
 export type codeBlockProps = {
@@ -15,6 +15,7 @@ export type codeBlockProps = {
 
 export const CodeBlock = ({ lang, code }: codeBlockProps) => {
   const ref = useRef<HTMLElement>(null);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { copiedText, copy, showCopied } = useClipboard();
   const language = lang && hljs.getLanguage(lang) ? lang : "plaintext";
 
@@ -35,6 +36,7 @@ export const CodeBlock = ({ lang, code }: codeBlockProps) => {
             variant="text"
             size="sm"
             onClick={() => {
+              // eslint-disable-next-line @typescript-eslint/no-unused-expressions
               code && copy(code);
             }}
           >

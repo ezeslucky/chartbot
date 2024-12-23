@@ -22,7 +22,7 @@ import {
   useRecordVoice,
   useScrollToBottom,
 } from "@/hooks";
-import { ArrowDown02Icon, Navigation03Icon } from "@hugeicons/react";
+import { ArrowDown02Icon, Navigation03Icon } from "@hugeicons/react-pro";
 import { TAssistant } from "@/hooks/use-chat-session";
 import { slideUpVariant } from "@/lib/framer-motion";
 import { cn } from "@/lib/utils";

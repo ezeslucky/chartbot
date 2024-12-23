@@ -10,7 +10,7 @@ import { usePreferenceContext } from "@/context/preferences";
 import { useModelList } from "@/hooks/use-model-list";
 import { Flex } from "./ui/flex";
 import { Type } from "./ui/text";
-import { Settings03Icon } from "@hugeicons/react";
+import { Settings03Icon } from "@hugeicons/react-pro";
 
 export const QuickSettings = () => {
   const [isOpen, setIsOpen] = useState(false);

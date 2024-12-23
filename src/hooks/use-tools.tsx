@@ -15,7 +15,7 @@ import {
   HugeiconsProps,
   Image01Icon,
   BrainIcon,
-} from "@hugeicons/react";
+} from "@hugeicons/react-pro";
 import { TToolResponse } from ".";
 import { memoryTool } from "@/tools/memory";
 

@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { SparklesIcon } from "@hugeicons/react";
+import { SparklesIcon } from "@hugeicons/react-pro";
 
 export type ModelIconType =
   | "gpt3"
