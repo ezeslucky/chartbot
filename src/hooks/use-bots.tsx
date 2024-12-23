@@ -1,8 +1,9 @@
 import { get, set } from "idb-keyval";
-import { TModelKey } from "./use-model-list";
+// import { TModelKey } from "./use-model-list";
 import { v4 } from "uuid";
 import { useMutation, useQuery } from "@tanstack/react-query";
-import { TAssistant } from "./use-chat-session";
+import { TAssistant } from "./use-chart-section";
+
 
 export const useAssistants = () => {
   const getAssistants = async (): Promise<TAssistant[]> => {
