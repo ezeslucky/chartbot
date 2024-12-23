@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Contributing 
 
-## Getting Started
+✅  Multi-Model Chat:  Integrate OpenAI, Gemini, Claude, and even your local Llama models! 🔄 <br>
+✅  Custom Assistants:  🦸‍♂️🦸‍♀️ Create specialized AI assistants tailored to specific tasks.  <br>
+✅  Real-time Chat:  💬 Enjoy seamless, streaming conversations.  <br>
+✅  Prompt Library: 📚 Store and reuse your favorite prompts.  <br>
+✅  Plugin Power: 🔌 Enhance functionality with web search, image generation, and context saving.  <br>
+✅  Voice Input:  🎙️ Speak your queries and get instant responses.  <br>
+✅  Responsive Design:  📱💻 Enjoy a beautiful experience on any device.  <br>
+✅  Dark Mode: 🌚 Switch to the dark side for comfortable viewing.  <br>
+✅  Settings Galore:  ⚙️ Customize everything from system prompts to model parameters.  <br>
+✅  Data Import/Export: 💾 Easily manage your chat history.  <br>
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+How to Contribute
+Follow these steps 
+
+<hr>
+1. Fork the Repository
+Click the "Fork" button at the top-right of the repository page to create your own copy of the project.
+<hr>
+
+2. Clone Your Fork
+Clone your forked repository to your local machine:
 ```
+git clone https://github.com/ezeslucky/chartbot.git
+```
+<hr>
+3. Install Dependencies
+Run the following command to install the project's dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+npm install
+```
+<hr>
+4. Start the Development Server
+Run the development server to test your changes locally:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm run dev
+```
+<hr>
+5. Create a New Branch
+Create a branch for your feature or fix:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+git checkout -b feature-name
+```
+<hr>
+6. Make Your Changes
+<hr>
+   
+7 .Edit the code to implement your feature or fix the bug.
+<hr>
+8. Commit Your Changes
+After making your changes, commit them with a descriptive message:
 
-## Learn More
+```
+git commit -m "Add feature-name"
+```
+<hr>
+9. Push Your Changes
+Push your branch to your forked repository:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+git push origin feature-name
+```
+<hr>
+10. Create a Pull Request (PR)
+    
+Go to the Pull Requests section of the original repository.
+Click "New Pull Request".
+Select your branch and submit your PR.
+Provide a clear description of your changes, including why they are beneficial.
