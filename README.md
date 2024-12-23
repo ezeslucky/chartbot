@@ -1,15 +1,15 @@
 Contributing 
 
 ✅  Multi-Model Chat:  Integrate OpenAI, Gemini, Claude, and even your local Llama models! 🔄 <br>
-✅  Custom Assistants:  🦸‍♂️🦸‍♀️ Create specialized AI assistants tailored to specific tasks.
-✅  Real-time Chat:  💬 Enjoy seamless, streaming conversations.
-✅  Prompt Library: 📚 Store and reuse your favorite prompts.
-✅  Plugin Power: 🔌 Enhance functionality with web search, image generation, and context saving.
-✅  Voice Input:  🎙️ Speak your queries and get instant responses.
-✅  Responsive Design:  📱💻 Enjoy a beautiful experience on any device.
-✅  Dark Mode: 🌚 Switch to the dark side for comfortable viewing.
-✅  Settings Galore:  ⚙️ Customize everything from system prompts to model parameters.
-✅  Data Import/Export: 💾 Easily manage your chat history.
+✅  Custom Assistants:  🦸‍♂️🦸‍♀️ Create specialized AI assistants tailored to specific tasks.  <br>
+✅  Real-time Chat:  💬 Enjoy seamless, streaming conversations.  <br>
+✅  Prompt Library: 📚 Store and reuse your favorite prompts.  <br>
+✅  Plugin Power: 🔌 Enhance functionality with web search, image generation, and context saving.  <br>
+✅  Voice Input:  🎙️ Speak your queries and get instant responses.  <br>
+✅  Responsive Design:  📱💻 Enjoy a beautiful experience on any device.  <br>
+✅  Dark Mode: 🌚 Switch to the dark side for comfortable viewing.  <br>
+✅  Settings Galore:  ⚙️ Customize everything from system prompts to model parameters.  <br>
+✅  Data Import/Export: 💾 Easily manage your chat history.  <br>
 
 
 How to Contribute
