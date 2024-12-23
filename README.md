@@ -13,8 +13,9 @@ Contributing
 
 
 How to Contribute
-Follow these steps to get started with contributing to Spectrum UI:
+Follow these steps 
 
+<hr>
 1. Fork the Repository
 Click the "Fork" button at the top-right of the repository page to create your own copy of the project.
 
@@ -47,11 +48,14 @@ After making your changes, commit them with a descriptive message:
 ```
 git commit -m "Add feature-name"
 ```
-8. Push Your Changes
+9. Push Your Changes
 Push your branch to your forked repository:
-
+```
 git push origin feature-name
-9. Create a Pull Request (PR)
+```
+<hr>
+10. Create a Pull Request (PR)
+    
 Go to the Pull Requests section of the original repository.
 Click "New Pull Request".
 Select your branch and submit your PR.
