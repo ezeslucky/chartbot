@@ -2,15 +2,17 @@ import { useFormik } from "formik";
 import { useEffect, useRef } from "react";
 import { Button } from "../ui/button";
 import { ArrowLeft, Plus } from "@phosphor-icons/react";
-import { FormLabel } from "../ui/form-label";
+// import { FormLabel } from "../ui/form-label";
 import { ModelSelect } from "../model-select";
-import { BotAvatar } from "../ui/bot-avatar";
+// import { BotAvatar } from "../ui/bot-avatar";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
-import { AddingSoon } from "../ui/adding-soon";
+// import { AddingSoon } from "../ui/adding-soon";
 import { convertFileToBase64 } from "@/lib/helper";
 import { Badge } from "../ui/badge";
-import { TAssistant } from "@/hooks/use-chat-session";
+import { TAssistant } from "@/hooks/use-chart-section";
+import { FormLabel } from "../ui/form";
+// import { TAssistant } from "@/hooks/use-chat-session";
 
 export type TCreateAssistant = {
   assistant?: TAssistant;
@@ -35,7 +37,7 @@ export const CreateAssistant = ({
       type: "custom",
     },
     enableReinitialize: true,
-    onSubmit: (values) => {
+    onSubmit: (values: Omit<TAssistant, "key">) => {
       if (assistant?.key) {
         onUpdateAssistant({ ...values, key: assistant?.key });
       } else {
