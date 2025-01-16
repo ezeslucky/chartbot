@@ -65,10 +65,4 @@ Push your branch to your forked repository:
 ```
 git push origin feature-name
 ```
-<hr>
-10. Create a Pull Request (PR)
-    
-Go to the Pull Requests section of the original repository.
-Click "New Pull Request".
-Select your branch and submit your PR.
-Provide a clear description of your changes, including why they are beneficial.
+
