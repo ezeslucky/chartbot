@@ -1,28 +1,15 @@
 {
   "name": "docs",
-  "version": "0.1.0",
-  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack --port 3001",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint --max-warnings 0",
-    "check-types": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@repo/ui": "*",
-    "next": "^15.4.2",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "dev": "mintlify dev --port 3004",
+    "build": "bun check-broken-links",
+    "check-broken-links": "mintlify broken-links",
+    "api:generate": "dotenv -e ./.env -e ../../.env -- tsx --tsconfig ../builder/tsconfig.json ../builder/src/helpers/server/generateOpenApi.ts && dotenv -e ./.env -e ../../.env -- tsx --tsconfig ../viewer/openapi.tsconfig.json ../viewer/src/helpers/server/generateOpenApi.ts"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*",
-    "@types/node": "^22.15.3",
-    "@types/react": "19.1.0",
-    "@types/react-dom": "19.1.1",
-    "eslint": "^9.33.0",
-    "typescript": "5.9.2"
+    "mintlify": "4.0.228",
+    "tsx": "4.19.1",
+    "dotenv-cli": "8.0.0"
   }
 }
