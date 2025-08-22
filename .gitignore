@@ -1,38 +1,62 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
-# Dependencies
 node_modules
-.pnp
-.pnp.js
-
-# Local env files
-.env
+.next
 .env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-# Testing
-coverage
-
-# Turbo
+workspace.code-workspace
+.DS_Store
 .turbo
+.idea
+authenticatedState.json
+playwright-report
+dist
+test-results
+**/src/test/results
+**/src/test/reporters
+test/report
+**/api/scripts
+.sentryclirc
+.docusaurus
+.cache-loader
+build
+firebaseServiceAccount.json
 
-# Vercel
+.env.production
+.env.staging
+
+# Wordpress
+.svn
+tags
+
+dump.sql
+dump.tar
+
+__env.js
+__ENV.js
+
+typebotsToFix.json
+**/scripts/logs
+
+snapshots
+
+.env
+.typebot-build
+
+.tolgee
+
+*.tsbuildinfo
+
+.tsup
+
+.env.docker
+
+.partykit
+
+.vinxi
+.output
 .vercel
 
-# Build Outputs
-.next/
-out/
-build
-dist
+.content-collections
 
+*.local.md
 
-# Debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Misc
-.DS_Store
-*.pem
+.tanstack
+.nitro
